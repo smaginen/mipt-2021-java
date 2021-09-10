@@ -1,4 +1,6 @@
-# Seminar 1
+# Общая информация 
+- Ссылка на видео семинаров - https://disk.yandex.ru/d/RW1lKA92ZiIfEA
+# Семинар 1
 
 #### Подготовка рабочего окружения
 - Установите [JDK8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) (выбрать Accept License Agreement)
