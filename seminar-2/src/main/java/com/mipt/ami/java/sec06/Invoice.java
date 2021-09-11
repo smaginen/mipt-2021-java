@@ -3,7 +3,7 @@ package com.mipt.ami.java.sec06;
 import java.util.ArrayList;
 
 public class Invoice {
-    private static class Item { // Item is nested inside Invoice
+    public static class Item { // Item is nested inside Invoice
         String description;
         int quantity;
         double unitPrice;

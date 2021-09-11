@@ -1,5 +1,6 @@
 package com.mipt.ami.java.sec05;
 
+
 import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;
 
