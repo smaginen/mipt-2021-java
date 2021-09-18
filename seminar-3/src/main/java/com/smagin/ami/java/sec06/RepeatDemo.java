@@ -1,7 +1,7 @@
 package com.smagin.ami.java.sec06;
 
 import java.util.function.IntConsumer;
-
+//Consider functional interfaces
 public class RepeatDemo {
 
     public static void repeat(int n, Runnable action) {

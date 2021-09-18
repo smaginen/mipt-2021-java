@@ -54,13 +54,13 @@ public class ComparatorDemo {
                 new Person("Barack", "Hussein", "Obama")
         };
                 
-        Arrays.sort(people, Comparator.comparing(Person::getName));
+        Arrays.sort(people, Comparator.comparing(Person::getFirstName));
         System.out.println(Arrays.toString(people));
         
         Arrays.sort(people,
                 Comparator.comparing(Person::getLastName)
                 .thenComparing(Person::getFirstName));
-        System.out.println(Arrays.toString(people));
+        System.out.println("!!!!!" +Arrays.toString(people));
         
         Arrays.sort(people, Comparator.comparing(Person::getName,
                 (s, t) -> s.length() - t.length()));

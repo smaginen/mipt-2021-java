@@ -37,6 +37,6 @@ public class Employee implements Comparable<Employee> {
     }
     
     public int compareTo(Employee other) {
-        return Double.compare(salary, other.salary);
+        return Double.compare(this.salary, other.getSalary());
     }
 }

@@ -1,6 +1,6 @@
 package com.smagin.ami.java.sec01;
 
-public class DigitSequence implements IntSequence {
+public class DigitSequence implements IntSequence, Cloneable{
     private int number;
 
     public DigitSequence(int n) {
