@@ -1,6 +1,5 @@
-package com.smagin.ami.java.task.melonfilter;
+package com.mipt.ami.java.problems.seminar3.melonfilter;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public final class Filters {

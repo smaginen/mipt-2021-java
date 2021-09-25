@@ -1,6 +1,6 @@
 package com.mipt.ami.java.sec01;
 
-public class Employee {
+public  class Employee {
     private String name;
     private double salary;
         
