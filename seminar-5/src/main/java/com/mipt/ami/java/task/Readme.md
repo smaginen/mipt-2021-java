@@ -1,0 +1,4 @@
+- (execution around) Реализовть функции возвращающие первый элемент и сумму элементов
+- (observer) реализовать observer
+- (decorator) Реализовать reduce decoration
+- (dynamic proxy) Реализовать с помощью dynamic proxy, количество вызовов каждого метода

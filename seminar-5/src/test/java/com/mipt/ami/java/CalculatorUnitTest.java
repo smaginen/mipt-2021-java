@@ -1,0 +1,18 @@
+package com.mipt.ami.java;
+
+import com.mipt.ami.java.junit.Calculator;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
+
+import static org.junit.Assert.assertEquals;
+
+@RunWith(JUnit4.class)
+public class CalculatorUnitTest {
+    Calculator calculator = new Calculator();
+
+    @Test
+    public void testAddition() {
+        assertEquals("addition", 8, calculator.add(5, 3));
+    }
+}

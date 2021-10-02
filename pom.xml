@@ -13,7 +13,41 @@
         <module>seminar-2</module>
         <module>seminar-3</module>
         <module>seminar-4</module>
+        <module>seminar-5</module>
+        <module>seminar-6</module>
     </modules>
+<dependencies>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>java-hamcrest</artifactId>
+            <version>${java-hamcrest.version}</version>
+            <scope>test</scope>
+        </dependency>
+    <dependency>
+        <groupId>pl.pragmatists</groupId>
+        <artifactId>JUnitParams</artifactId>
+        <version>${jUnitParams.version}</version>
+        <scope>test</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/junit/junit -->
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.12</version>
+        <scope>test</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>1.7.30</version>
+    </dependency>
 
+
+</dependencies>
+    <properties>
+        <java-hamcrest.version>2.0.0.0</java-hamcrest.version>
+        <jUnitParams.version>1.1.0</jUnitParams.version>
+    </properties>
 
 </project>
