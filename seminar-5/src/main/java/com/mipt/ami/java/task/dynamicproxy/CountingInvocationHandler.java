@@ -16,7 +16,9 @@ public class CountingInvocationHandler implements InvocationHandler {
     public CountingInvocationHandler(Object targetObject) {
         this.targetObject = targetObject;
 
-
+        for (Method method : targetObject.getClass().getDeclaredMethods()) {
+            this.counter.put(method.getName() + Arrays.toString(method.getParameterTypes()), 0);
+        }
     }
 
     public Map<String, Integer> countOf(String methodName) {
@@ -32,6 +34,8 @@ public class CountingInvocationHandler implements InvocationHandler {
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 
         Object resultOfInvocation = method.invoke(targetObject, args);
+        counter.computeIfPresent(method.getName()
+                + Arrays.toString(method.getParameterTypes()), (k, v) -> ++v);
 
         return resultOfInvocation;
     }

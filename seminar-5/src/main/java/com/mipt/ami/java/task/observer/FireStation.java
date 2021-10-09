@@ -10,13 +10,19 @@ public class FireStation implements FireStationRegister {
     @Override
     public void registerFireStation(FireObserver fo) {
         
-
+        if (fo != null) {
+            fireObservers.add(fo);
+        }
     }
     
     @Override
     public void notifyFireStations(String address) {
                  
-
+        if (address != null) {
+            for (FireObserver fireObserver : fireObservers) {
+                fireObserver.fire(address);
+            }
+        }
     }
     
 }

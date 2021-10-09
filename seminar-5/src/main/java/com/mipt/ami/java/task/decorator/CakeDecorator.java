@@ -10,12 +10,13 @@ public class CakeDecorator {
     public CakeDecorator(Function<Cake, Cake>... decorations) {
         reduceDecorations(decorations);
     }    
-//todo eliminate null
+
     public Cake decorate(Cake cake) {
-        return null;
+        return decorator.apply(cake);
     }
 
     private void reduceDecorations(Function<Cake, Cake>... decorations) {
-
+        decorator = Stream.of(decorations)
+                .reduce(Function.identity(), Function::andThen);
     }
 }
