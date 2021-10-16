@@ -15,6 +15,7 @@
         <module>seminar-4</module>
         <module>seminar-5</module>
         <module>seminar-6</module>
+        <module>seminar-7</module>
     </modules>
 <dependencies>
         <dependency>
