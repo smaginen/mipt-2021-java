@@ -1,0 +1,21 @@
+package com.mipt.ami.java.javaprogramdesign.chapter08.bank17;
+
+public class BankAccountAdapter implements FBIAcctInfo {
+   private BankAccount ba;
+
+   public BankAccountAdapter(BankAccount ba) {
+      this.ba = ba;
+   }
+
+   public int balance() {
+      return ba.getBalance() / 100;
+   }
+
+   public boolean isForeign() {
+      return ba.isForeign();
+   }
+
+   public String acctType() {
+      return "deposit";
+   }
+}
